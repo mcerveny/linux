@@ -31,6 +31,10 @@ static const struct ss_variant ss_a33_variant = {
 	.sha1_in_be = true,
 };
 
+static const struct ss_variant ss_v3s_variant = {
+	.sha1_in_be = true,
+};
+
 static struct sun4i_ss_alg_template ss_algs[] = {
 {       .type = CRYPTO_ALG_TYPE_AHASH,
 	.mode = SS_OP_MD5,
@@ -504,6 +508,9 @@ static const struct of_device_id a20ss_crypto_of_match_table[] = {
 	},
 	{ .compatible = "allwinner,sun8i-a33-crypto",
 	  .data = &ss_a33_variant
+	},
+	{ .compatible = "allwinner,sun8i-v3s-crypto",
+	  .data = &ss_v3s_variant
 	},
 	{}
 };
