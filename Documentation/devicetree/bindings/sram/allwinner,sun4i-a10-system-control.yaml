@@ -93,6 +93,9 @@ patternProperties:
                   - const: allwinner,sun8i-h3-sram-c1
                   - const: allwinner,sun4i-a10-sram-c1
               - items:
+                  - const: allwinner,sun8i-v3s-sram-c1
+                  - const: allwinner,sun4i-a10-sram-c1
+              - items:
                   - const: allwinner,sun8i-r40-sram-c1
                   - const: allwinner,sun4i-a10-sram-c1
               - items:
