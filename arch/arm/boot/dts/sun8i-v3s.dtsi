@@ -162,17 +162,17 @@
 			#size-cells = <1>;
 			ranges;
 
-			sram_c: sram@1d00000 {
+			sram_c: sram@4000 {
 				compatible = "mmio-sram";
-				reg = <0x01d00000 0x80000>;
+				reg = <0x4000 0xb000>;
 				#address-cells = <1>;
 				#size-cells = <1>;
-				ranges = <0 0x01d00000 0x80000>;
+				ranges = <0 0x4000 0xb000>;
 
 				ve_sram: sram-section@0 {
 					compatible = "allwinner,sun8i-v3s-sram-c1",
 						     "allwinner,sun4i-a10-sram-c1";
-					reg = <0x000000 0x80000>;
+					reg = <0x0 0xb000>;
 				};
 			};
 		};
